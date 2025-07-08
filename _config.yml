@@ -1,0 +1,43 @@
+title: Sensenet
+description: We build innovative software solutions that empower businesses to thrive in the digital age.
+theme: jekyll-theme-cayman
+
+# Social media links
+github_username: sensenetza
+email: pietman@sensenet.co.za
+
+# SEO settings
+url: "https://sensenetza.github.io"
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+sass:
+  style: compressed
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Navigation
+navigation:
+  - title: Home
+    url: /
+  - title: About
+    url: /about
+  - title: Services
+    url: /services
+  - title: Contact
+    url: /contact
+
+# Footer links
+footer_links:
+  - title: GitHub
+    url: https://github.com/sensenetza
+    icon: github
+  - title: Email
+    url: mailto:pietman@sensenet.co.za
+    icon: email
