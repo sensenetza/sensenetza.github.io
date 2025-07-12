@@ -179,8 +179,11 @@ code {
 
 /* Header styling */
 .page-header {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #2e8bc0 0%, #53c8ea 100%);
   color: white;
+  text-align: center;
+  padding: 2.5rem 0 2rem 0;
+  border-bottom: 4px solid #53c8ea;
 }
 
 .page-header .project-name {
@@ -188,7 +191,7 @@ code {
 }
 
 .page-header .project-tagline {
-  color: rgba(255, 255, 255, 0.9);
+  color: #e0f7fa;
 }
 
 /* Custom header buttons */
@@ -205,8 +208,8 @@ code {
 
 /* Navigation styling */
 .main-navigation {
-  background: #2c3e50;
-  padding: 1rem 0;
+  background: #1a3c40;
+  color: white;
   margin-bottom: 2rem;
 }
 
@@ -224,34 +227,33 @@ code {
 }
 
 .main-navigation a {
-  color: white;
-  text-decoration: none;
+  color: #53c8ea;
   font-weight: 600;
   padding: 0.5rem 1rem;
   border-radius: 4px;
-  transition: background 0.3s ease;
+  transition: background 0.3s;
 }
 
 .main-navigation a:hover {
-  background: #34495e;
-  text-decoration: none;
+  background: #2e8bc0;
+  color: white;
 }
 
 /* Footer styling */
 .site-footer {
-  background: #2c3e50;
-  color: white;
+  background: #1a3c40;
+  color: #e0f7fa;
   padding: 2rem 0;
   margin-top: 3rem;
   text-align: center;
 }
 
 .site-footer a {
-  color: #3498db;
+  color: #53c8ea;
 }
 
 .site-footer a:hover {
-  color: #5dade2;
+  color: #2e8bc0;
 }
 
 /* Highlight boxes */
@@ -309,4 +311,9 @@ code {
 
 .process-container {
   counter-reset: step;
+}
+
+body {
+  background: linear-gradient(135deg, #e0f7fa 0%, #53c8ea 100%);
+  color: #1a3c40;
 }

@@ -4,24 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-{% seo %}
+    {% seo %}
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
   </head>
   <body>
     <a id="skip-to-content" href="#content">Skip to the content.</a>
 
-    <header class="page-header" role="banner">
-      <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
-      <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
-      {% if site.github.is_project_page %}
-        <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
-      {% endif %}
-      {% if site.show_downloads %}
-        <a href="{{ site.github.zip_url }}" class="btn">Download .zip</a>
-        <a href="{{ site.github.tar_url }}" class="btn">Download .tar.gz</a>
-      {% endif %}
-      <a href="mailto:{{ site.email }}" class="btn">Contact Us</a>
+    <header class="page-header" role="banner" style="background: linear-gradient(135deg, #2e8bc0 0%, #53c8ea 100%); color: white; text-align: center;">
+      <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1rem;">
+        <img src="{{ '/assets/images/sensenet_logo.svg' | relative_url }}" alt="Sensenet Logo" style="height: 80px; width: auto; margin-bottom: 1rem;">
+        <h1 class="project-name" style="color: white; margin-bottom: 0.5rem;">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
+        <h2 class="project-tagline" style="color: #e0f7fa; font-weight: 400;">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
+        <div style="margin-top: 1rem;">
+          {% if site.github.is_project_page %}
+            <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
+          {% endif %}
+          {% if site.show_downloads %}
+            <a href="{{ site.github.zip_url }}" class="btn">Download .zip</a>
+            <a href="{{ site.github.tar_url }}" class="btn">Download .tar.gz</a>
+          {% endif %}
+          <a href="mailto:{{ site.email }}" class="btn">Contact Us</a>
+        </div>
+      </div>
     </header>
 
     <nav class="main-navigation">
@@ -34,7 +38,6 @@
 
     <main id="content" class="main-content" role="main">
       {{ content }}
-
       <footer class="site-footer">
         <div class="footer-content">
           <p>&copy; {{ 'now' | date: "%Y" }} {{ site.title }}. All rights reserved.</p>
